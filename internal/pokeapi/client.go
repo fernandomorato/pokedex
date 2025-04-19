@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"time"
 
-	"pokedexcli/internal/pokecache"
+	"github.com/fernandomorato/pokedex/internal/pokecache"
 )
 
 const (

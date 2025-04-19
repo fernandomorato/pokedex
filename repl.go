@@ -6,7 +6,7 @@ import (
 	"os"
 	"strings"
 
-	"pokedexcli/internal/pokeapi"
+	"github.com/fernandomorato/pokedex/internal/pokeapi"
 )
 
 func repl(cfg *config) {
@@ -41,9 +41,9 @@ func cleanInput(text string) []string {
 }
 
 type config struct {
-	client   pokeapi.Client
-	previous *string
-	next     *string
+	client        pokeapi.Client
+	previous      *string
+	next          *string
 	caughtPokemon map[string]pokeapi.Pokemon
 }
 

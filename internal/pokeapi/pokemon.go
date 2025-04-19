@@ -314,7 +314,7 @@ func (c *Client) GetPokemon(name string) (Pokemon, error) {
 	defer res.Body.Close()
 	if res.StatusCode > 299 {
 		return Pokemon{}, fmt.Errorf("error: %s", res.Status)
-	} 
+	}
 
 	rawData, err := io.ReadAll(res.Body)
 	if err != nil {
